@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aditya Porje | HR & Business Analyst</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<div class="logo">Aditya Portfolio</div>
+
+<nav>
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hi, I'm <span>Aditya Porje</span></h1>
+
+<h3>HR Analyst | Business Analyst</h3>
+
+<div class="buttons">
+
+<a href="#" class="btn" onclick="openResume()">View Resume</a>
+
+<a href="https://www.linkedin.com/in/adityaporje04/" target="_blank" class="btn-outline">
+LinkedIn
+</a>
+
+<a href="https://github.com/adityaporje04" target="_blank" class="btn-outline">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+<img src="images/profile.jpg" alt="Aditya Porje">
+</div>
+
+</section>
+
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am currently pursuing an MBA with specialization in Human Resources and Business Analytics at Bharati Vidyapeeth IMED, Pune. I have a strong academic background in Computer Science, which helps me combine technical knowledge with HR and business decision-making.
+</p>
+
+<p>
+I am interested in areas such as recruitment, employee relations, HR analytics, and data-driven business analysis. My technical skills include MS Excel, Power BI, Python, and Java.
+</p>
+
+<p>
+I am seeking opportunities where I can apply my analytical and HR knowledge, gain practical experience, and contribute to organizational growth.
+</p>
+
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill-card">
+<h3>HR Analytics</h3>
+<div class="skill-bar">
+<div class="skill-progress hr"></div>
+</div>
+</div>
+
+<div class="skill-card">
+<h3>Business Analysis</h3>
+<div class="skill-bar">
+<div class="skill-progress ba"></div>
+</div>
+</div>
+
+<div class="skill-card">
+<h3>Excel / Power BI</h3>
+<div class="skill-bar">
+<div class="skill-progress excel"></div>
+</div>
+</div>
+
+<div class="skill-card">
+<h3>SQL</h3>
+<div class="skill-bar">
+<div class="skill-progress sql"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project">
+<img src="images/project1.jpg">
+<h3>HR Attrition Dashboard</h3>
+<p>Analyzed employee attrition using Excel dashboard.</p>
+</div>
+
+<div class="project">
+<img src="images/project2.jpg">
+<h3>Logistics Cost Analysis</h3>
+<p>Transport route analysis for cost optimization.</p>
+</div>
+
+<div class="project">
+<img src="images/project3.jpg">
+<h3>Recruitment Analytics</h3>
+<p>Power BI dashboard for recruitment metrics.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contact-form">
+
+<input type="text" name="name" id="name" placeholder="Your Name" required>
+
+<input type="email" name="email" id="email" placeholder="Your Email" required>
+
+<textarea name="message" id="message" placeholder="Your Message" required></textarea>
+
+<!-- spam protection -->
+<input type="text" name="website" id="website" style="display:none">
+
+<button type="submit" id="sendBtn">
+
+<span id="btnText">Send Message</span>
+<span id="loader" class="loader"></span>
+
+</button>
+
+<p id="form-message"></p>
+
+</form>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+<p>© 2026 Aditya Porje</p>
+</footer>
+
+
+
+<!-- RESUME POPUP -->
+
+<div id="resumeModal" class="resume-modal">
+
+<div class="resume-content">
+
+<span class="close-btn" onclick="closeResume()">×</span>
+
+<iframe src="resume.pdf"></iframe>
+
+</div>
+
+</div>
+
+
+
+<!-- EmailJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("tS9ehiAubfLmgm-VQ");
+</script>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
